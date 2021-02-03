@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="App1.NewTransactionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Insert New Transaction" Padding="30" FontSize="34"></TextBlock>
+        <TextBlock x:Name="LblDate" Grid.Row="1" Grid.Column="0" Padding="30" Text="Date" VerticalAlignment="Center"></TextBlock>
+        <TextBox   x:Name="TxtDate" Grid.Row="1" Grid.Column="1" Margin="30" ></TextBox>
+        <TextBlock x:Name="LblAmount" Grid.Row="2" Grid.Column="0" Padding="30" Text="Amount" VerticalAlignment="Center"></TextBlock>
+        <TextBox   x:Name="TxtAmount" Grid.Row="2" Grid.Column="1" Margin="30" ></TextBox>
+        <TextBlock x:Name="LblDescription" Grid.Row="3" Grid.Column="0" Padding="30" Text="Description" VerticalAlignment="Center"></TextBlock>
+        <TextBox   x:Name="TxtDescription" Grid.Row="3" Grid.Column="1" Margin="30" ></TextBox>
+        <TextBlock x:Name="LblBeneficiary" Grid.Row="4" Grid.Column="0" Padding="30" Text="Beneficiary" VerticalAlignment="Center"></TextBlock>
+        <TextBox   x:Name="TxtBeneficiary" Grid.Row="4" Grid.Column="1" Margin="30" ></TextBox>
+        <TextBlock x:Name="LblNote" Grid.Row="5" Grid.Column="0" Padding="30" Text="Note" VerticalAlignment="Center"></TextBlock>
+        <TextBox   x:Name="TxtNote" Grid.Row="5" Grid.Column="1" Margin="30" ></TextBox>
+        <Button    x:Name="BtnInsert" Grid.Row="6" Grid.Column="1" Content="Insert" HorizontalAlignment="Right" Margin="30" MinHeight="50" MinWidth="150"></Button>
+    </Grid>
+</Page>
